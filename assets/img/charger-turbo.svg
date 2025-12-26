@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#061126"/>
+  <rect x="100" y="160" width="340" height="260" rx="18" fill="#ffd6aa" opacity="0.10"/>
+  <text x="60" y="160" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Charger Turbo 65W</text>
+  <text x="60" y="230" fill="#cbd6e6" font-family="Inter, Arial, sans-serif" font-size="28">Pengisian cepat, multi-port</text>
+</svg>

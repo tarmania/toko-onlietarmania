@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TD Shop — Toko Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">TD Shop</a>
+      <nav class="nav">
+        <a href="#home">Beranda</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="burger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Selamat datang di TD Shop</h1>
+          <p class="lead">Pilihan produk berkualitas — desain elegan, layanan cepat.</p>
+          <a class="btn btn-primary" href="#products">Lihat Produk</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1603783185296-0f66a1f6a7b6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="TD Shop"/>
+      </div>
+    </section>
+
+    <section id="products" class="section container">
+      <h2 class="section-title">Produk</h2>
+      <div id="productsGrid" class="products-grid">
+        <!-- Produk akan diisi via JS -->
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2 class="section-title">Kontak</h2>
+      <p>Butuh bantuan? Hubungi kami via WhatsApp atau isi formulir singkat.</p>
+      <div class="contact-cards">
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p>Klik tombol WhatsApp pada setiap produk untuk mulai chat.</p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p>support@tdshop.example (ganti dengan alamat Anda)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> TD Shop — Semua hak tersisa.</div>
+  </footer>
+
+  <!-- Modal detail produk -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Tutup">×</button>
+      <div class="modal-body">
+        <img id="modalImage" alt="Gambar produk"/>
+        <div class="modal-info">
+          <h3 id="modalName"></h3>
+          <p class="price" id="modalPrice"></p>
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
